@@ -74,7 +74,18 @@
 </body>
 <script>
     function add() {
-        alert('게시물이 추가됩니다.');
+        var dateInput = document.querySelector('input[type="date"]');
+        var todoInput = document.querySelector('textarea[name="content"]');
+        var placeInput = document.querySelector('input[name="place"]');
+        var timeInput = document.querySelector('input[type="time"]');
+        
+        if (dateInput.value === '' || todoInput.value === '' || placeInput.value === '' || timeInput.value === '') {
+            alert('모든 항목을 입력하세요.');
+        } else {
+            alert('게시물이 추가됩니다.');
+        }
     }
+
+
 </script>
 </html>
